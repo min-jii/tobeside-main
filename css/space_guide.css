@@ -1,0 +1,356 @@
+header{
+	box-sizing: border-box;
+	float: right;
+	width: calc(100% - 530px);
+	/* height: 25%;*/
+	height: 172px;
+	box-shadow: 0 0 0 1px  #000066 inset; 
+	clip-path: inset(1px 1px 0 1px);
+
+	padding: 26px;
+}
+
+
+header .header-sec1 img{
+    width: 186px;
+
+}
+
+.content{
+	float: right;
+	width: calc(100% - 530px);
+	height: calc(100% - 230px);
+
+}
+
+
+
+.content-wrap{
+    width: 58%;
+    height: 100%;
+    float: right;
+
+    margin: 2.8% 0 ;
+}
+
+
+.content-sec1{
+    width: 86%;
+    height:6%;
+    float: right;
+} 
+
+
+.content-sec2{
+    width: 100%;
+    height: 94%;
+    
+
+}
+
+
+.content-sec3{
+    padding-top: 3%;
+    padding-left: 5%;
+    width: 37%;
+    height: 100%;
+    float: left;
+
+}
+
+
+
+
+
+
+/**************************************************************/
+
+/* 전체 랩퍼 */
+#slider-wrap-sec1{
+
+    width: 100%; /************************/
+    height: 100%; /************************/
+    position: relative;
+    overflow: hidden;
+	margin: 0 auto;
+}
+
+/* 이게 있어야 사진이 넘어감*/
+#slider-wrap-sec1 ul#slider-sec1{
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+#slider-wrap-sec1 ul#slider-sec1 li{
+    float: left; /* 있어야지 사진이 정렬됨*/
+    position: relative; /* 있어야지 사진이 하나에 한개씩 넘어감*/
+    width: 100%;
+    height: 100%;
+}
+
+#slider-wrap-sec1 ul#slider-sec1 .slider-sec1-title h3{
+    font-size: 29.5px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: normal;
+}
+
+#slider-wrap-sec1 ul#slider-sec1 .slider-sec1-title-icon{
+	padding: 0 1px;
+	font-family: Kroppen Round Light;
+	/* background-color: #000066;
+	color: white; */
+	margin-right: 8px;
+    margin-top: 2.5px;
+	float: left;
+    height: 26px;
+}
+
+
+
+
+
+
+#slider-wrap-sec2{
+
+    width: 76%; /************************/
+    height: 100%; /************************/
+    position: relative;
+    overflow: hidden;
+	margin: 0 auto;
+    float: left;
+
+}
+
+/* 이게 있어야 사진이 넘어감*/
+#slider-wrap-sec2 ul#slider-sec2{
+    height: 100%;
+    width: 90%;
+    position: absolute;
+    top: 0;
+    left: 0;
+
+}
+
+
+#slider-wrap-sec2 ul#slider-sec2 li{
+    float: left; /* 있어야지 사진이 정렬됨*/
+    position: relative; /* 있어야지 사진이 하나에 한개씩 넘어감*/
+    width: 100%;
+    height: 100%;
+}
+
+
+
+#slider-wrap-sec2 ul#slider-sec2 .slider-sec2-content {
+    font-size: 18px;
+    line-height: 28px;
+    width: 87%; /*아래  img width랑 동일시켜야지  width 조절 가능*/
+    padding-left: 20px;
+
+    padding-top: 20px;
+
+}
+
+#slider-wrap-sec2 ul#slider-sec2 li>img {
+    display: block;
+    width: 87%;
+    height: auto;
+
+    padding-left: 20px;
+    padding-top: 10px;
+
+}
+
+
+
+/*btns*/
+.slider-btns {
+    font-size: 35px;
+    font-family: Kroppen Round Bold;
+    font-style: bold;
+
+    line-height: 345px; /* 위에 img height + padding값 랑 동일시켜야지  조절 가능*/
+    width: 12%;
+
+    text-align: center;
+
+    cursor: pointer;
+    z-index: 100;
+    color: #000066;
+
+
+    position: relative;
+
+}
+
+
+#next {
+    left: -25px;
+}
+
+#previous {
+    /* left: -50px; */
+    float: left;
+    margin-top: 6%;
+}
+
+
+
+
+
+/* 넥스트 버튼 호버*/
+.slider-btns:hover {
+	opacity: 0.5;
+}
+
+
+
+
+/* slide sec3*/
+
+#slider-wrap-sec3 {
+
+    width: 100%; /************************/
+    height: 100%; /************************/
+    position: relative;
+    overflow: hidden;
+	margin: 0 auto;
+}
+
+/* 이게 있어야 사진이 넘어감*/
+#slider-wrap-sec3 ul#slider-sec3 {
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+#slider-wrap-sec3 ul#slider-sec3 li {
+    float: left; /* 있어야지 사진이 정렬됨*/
+    position: relative; /* 있어야지 사진이 하나에 한개씩 넘어감*/
+    width: 100%;
+}
+
+
+#slider-wrap-sec3 ul#slider-sec3 li>img {
+    display: block;
+    width: 97%;
+    height: 100%;
+}
+
+
+
+
+
+
+/*넥스트 버튼 액티브 효과
+
+
+#slider-wrap-sec1.active #next {
+    right: -30px;
+}
+
+#slider-wrap-sec1.active #previous {
+    left: -30px;
+}
+ */
+
+
+/*ANIMATION*/
+#slider-wrap-sec1 ul, #slider-wrap-sec1 ul {
+    -webkit-transition: all 0.4s cubic-bezier(.5, .01, .32, .1);
+    -o-transition: all 0.4s cubic-bezier(.5, .01, .32, .1);
+    transition: all 0.4s cubic-bezier(.5, .01, .32, .1);
+
+    /* 애니메이션 속도 조정 https://newbedev.com/html-transition-all-0-3s-cubic-bezier-25-8-251-code-example*/
+}
+
+
+#slider-wrap-sec2 ul, #slider-wrap-sec2 ul {
+    -webkit-transition: all 0.4s cubic-bezier(.5, .01, .32, .1);
+    -o-transition: all 0.4s cubic-bezier(.5, .01, .32, .1);
+    transition: all 0.4s cubic-bezier(.5, .01, .32, .1);
+
+    /* 애니메이션 속도 조정 https://newbedev.com/html-transition-all-0-3s-cubic-bezier-25-8-251-code-example*/
+}
+
+
+/* Fading animation */
+.fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+  }
+  
+  @-webkit-keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
+  }
+  
+  @keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
+  }
+
+
+
+
+
+
+/*************** debugging**************
+
+
+
+
+.content{
+    background-color: orange;
+}
+
+.content-wrap{
+    background-color: blue;
+
+}
+
+.content-sec1{
+
+    background-color: aqua;
+
+}
+
+
+.content-sec2{
+    background-color: burlywood;
+
+}
+
+
+.content-sec3{
+    background-color: rebeccapurple;
+
+}
+
+
+
+#slider-wrap-sec1{
+    background-color: khaki; 
+
+}
+
+#slider-wrap-sec2 {
+    background-color: olivedrab;
+
+}
+
+
+.slider-btns{
+    background-color: red;
+
+}
+
+
+
+
+*/

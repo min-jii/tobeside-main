@@ -1,0 +1,404 @@
+*{
+	padding: 0;
+	margin: 0;
+	list-style: none;
+
+}
+
+html{
+	font-family: Kroppen Round;
+	color: #000066;
+	height: 100%;
+	width: 100%;
+
+	overflow: hidden;
+
+}
+
+
+
+body{
+	height: 100%;
+	width: 98.5%;
+	word-break: keep-all;
+
+	border-right: 1px #000066 solid;
+
+
+	/* space_guide*/
+	/* background-image: url('../img/sketch/space_guide.jpeg');
+	background-repeat: no-repeat;
+	background-size: 100%;
+	opacity: 30%; */
+
+	/* calender */
+	/* background-image: url('../img/sketch/calendar.jpeg');
+	background-repeat: no-repeat;
+	background-size: 100%; 
+	opacity: 30%; */
+
+	/* archives */
+	/* background-image: url('../img/sketch/archives.jpeg');
+	background-repeat: no-repeat;
+	background-size: 100%;
+	opacity: 30%; */
+
+	/* archives_detail */
+	/* background-image: url('../img/sketch/archives_detail.jpeg');
+	background-repeat: no-repeat;
+	background-size: 100%;
+	opacity: 30%; */
+
+	/* magazine */
+	/* background-image: url('../img/sketch/magazine.jpeg');
+	background-repeat: no-repeat;
+	background-size: 100%;
+	opacity: 10%;  */
+
+	/* magazine_detail */
+	/* background-image: url('../img/sketch/magazine_detail.jpeg');
+	background-repeat: no-repeat;
+	background-size: 100%;
+	opacity: 30%; */
+	
+	/* about_tea */
+	/* background-image: url('../img/sketch/tea.jpg');
+	background-repeat: no-repeat;
+	background-size: 100%;
+	opacity: 30%; */
+
+	/* membership */
+	/* background-image: url('../img/sketch/membership.jpeg');
+	background-repeat: no-repeat;
+	background-size: 100%;
+	opacity: 30%; */
+
+	/* contact */
+	/* background-image: url('../img/sketch/contact.jpeg');
+	background-repeat: no-repeat;
+	background-size: 100%;
+	opacity: 30%; */
+
+
+
+}
+
+
+h1{
+	font-size: 43px;
+}
+
+h2{
+	font-size: 28px;
+}
+
+h3{
+	font-size: 25px;
+}
+
+h5{
+	font-size: 15px;
+	font-family:'Roboto', sans-serif;
+	font-weight: 500;
+}
+
+h6{
+	font-size: 12px;
+	font-family:'Roboto', sans-serif;
+	font-weight: 500;
+
+}
+
+span{
+	font-family: Kroppen Round Light;
+}
+
+p{
+	font-size: 10px;
+}
+
+.underline{
+	text-decoration: underline;
+	text-decoration-thickness: 1.5px;
+	text-underline-position: under;
+}
+
+.border-top{
+	border-top: 1px solid #000066;
+}
+
+.border-bottom{
+	border-bottom: 1px solid #000066;
+}
+
+/********** nav **********/
+
+nav{
+	height: 100%;
+	/* width: 30%; */
+	width: 530px;
+	float: left;
+}
+
+/********** inner nav **********/
+
+.inner-nav{
+	box-sizing: border-box;
+	height: 100%;
+	width: 58%;
+	padding: 20px;
+	float: left;
+	box-shadow: 0 0 0 1px  #000066 inset; 
+	clip-path: inset(1px 0 1px 1px);
+
+	display: grid;
+	grid-template-rows: 1fr 1fr 3fr 6fr 2fr;
+	grid-template-columns: 1fr;
+}
+
+
+.inner-nav-sec1{
+	grid-area: inner-nav-sec1;
+	grid-row: 1/2;
+	grid-column: 1/2;
+}
+
+.inner-nav-sec2{
+	grid-area: inner-nav-sec2;
+	grid-row: 2/3;
+	grid-column: 1/2;
+}
+
+.inner-nav-sec3{
+	grid-area: inner-nav-sec3;
+	grid-row: 3/4;
+	grid-column: 1/2;
+	margin: 2px;
+}
+
+.inner-nav-sec4{
+	grid-area: inner-nav-sec4;
+	grid-row: 5/6;
+	grid-column: 1/2;
+
+	margin-top: 20px;
+}
+
+/* logo */
+.inner-nav-sec1 h1{
+	margin: 5px;
+	font-family: Kroppen Round Thin;
+	font-size: 43px;
+}
+
+
+.icon_bar{
+	width: 145px;
+	height: 1px;
+	top: 29px;
+	left: 185px;
+	z-index: 100;
+	position: absolute;
+	
+}
+
+
+
+.inner-nav ul{
+	list-style-type: none;
+	margin:0;
+	padding:0;
+}
+
+.inner-nav li {
+	padding: 6.5px 6px;
+}
+
+.inner-nav span{
+	padding: 0 7px;
+	float: right;
+	font-family: Kroppen Round Light;
+	font-size: 22px;
+}
+
+.inner-nav .selected{
+	background-color: #000066;
+	color: white;
+}
+
+.inner-nav li a{
+	display: inline-block;
+	color: #000066;
+	font-size: 18px;
+	margin: 3px 0 ;
+	width: 55%;
+	text-decoration: none;
+
+	font-family: Kroppen Round;
+	font-size: 18px;
+}
+
+
+
+.inner-nav a:hover{
+	background-color: #000066;
+	color: white;
+}
+
+/********** outer nav **********/
+
+
+.outer-nav{
+	box-sizing: border-box;
+	height: 100%;
+	width: 42%;
+	float: right;
+
+	padding: 0 10px;
+
+	box-shadow: 0 0 0 1px  #000066 inset; 
+	clip-path: inset(1px 0 1px 1px);
+
+	display: grid;
+	grid-template-rows: 1fr 1fr 3fr 6fr 2fr;
+	grid-template-columns: 1fr;
+}
+
+.outer-nav-sec1{
+	grid-area: outer-nav-sec1;
+	grid-row: 3/4;
+	grid-column: 1/2;
+	/* 우선이렇게만 */
+	margin-top: 15px;
+}
+
+.outer-nav ul{
+	list-style-type: none;
+	margin:0;
+	padding:5px;
+}
+
+.outer-nav li {
+	margin:7px;
+	padding:3px;
+
+}
+
+.outer-nav .selected{
+	text-decoration: underline;
+	text-decoration-thickness: 1.5px;
+	text-underline-position: under;
+}
+
+.outer-nav img{
+	width: 20px;
+	float: right;
+	padding-right: 5px;
+}
+
+.outer-nav li a {
+	color: #000066;
+	font-size: 16px;
+	padding-right:10px;
+	display:inline-block;
+	text-decoration: none;
+
+}
+
+.outer-nav li a:hover{
+	text-decoration: underline;
+	text-decoration-thickness: 1.5px;
+	text-underline-position: under;
+}
+
+/********** header **********/
+
+
+header .header-sec1 img{
+    width: 200px;
+
+}
+
+/* header{
+	box-sizing: border-box;
+	float: right;
+	width: calc(100% - 380px);
+	/* height: 25%;
+	height: 140px;
+	min-height: 140px;
+	box-shadow: 0 0 0 1px  #000066 inset; 
+	clip-path: inset(1px  1px 0 1px);
+	padding: 20px;
+}
+.header-sec1{
+	float: left;
+	width: 40%;
+}
+
+.header-sec2{
+	float: right;
+	width: 60%;
+} */
+
+/********** font **********/
+
+@font-face {
+    font-family: 'Kroppen Round Thin';
+    src: url('./font/KroppenRound-Thin.eot');
+    src: local('Kroppen Round Thin'), local('KroppenRound-Thin'),
+        url('./font/KroppenRound-Thin.eot?#iefix') format('embedded-opentype'),
+        url('./font/KroppenRound-Thin.woff') format('woff'),
+        url('./font/KroppenRound-Thin.ttf') format('truetype');
+    font-weight: 100;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Kroppen Round Light';
+    src: url('./font/KroppenRound-Light.eot');
+    src: local('Kroppen Round Light'), local('KroppenRound-Light'),
+        url('./font/KroppenRound-Light.eot?#iefix') format('embedded-opentype'),
+        url('./font/KroppenRound-Light.woff') format('woff'),
+        url('./font/KroppenRound-Light.ttf') format('truetype');
+    font-weight: lighter;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Kroppen Round';
+    src: url('./font/KroppenRound.eot');
+    src: local('Kroppen Round'), local('KroppenRound'),
+        url('./font/KroppenRound.eot?#iefix') format('embedded-opentype'),
+        url('./font/KroppenRound.woff') format('woff'),
+        url('./font/KroppenRound.ttf') format('truetype');
+    font-weight: 100;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Kroppen Round Bold';
+    src: url('./font/KroppenRound-Bold.eot');
+    src: local('Kroppen Round Bold'), local('KroppenRound-Bold'),
+        url('./font/KroppenRound-Bold.eot?#iefix') format('embedded-opentype'),
+        url('./font/KroppenRound-Bold.woff') format('woff'),
+        url('./font/KroppenRound-Bold.ttf') format('truetype');
+    font-weight: bold;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+
+
+
+/*
+
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400&display=swap" rel="stylesheet">
+
+
+font-family: 'Roboto', sans-serif;
+*/
+
+
+

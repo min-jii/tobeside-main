@@ -1,0 +1,252 @@
+/********** main **********/
+
+
+.main{
+    float: right;
+	width: calc(100% - 530px);
+    height: 100%;
+}
+
+/********** header **********/
+
+.outer-nav li a:hover{
+	text-decoration: underline;
+	text-decoration-thickness: 1.5px;
+	text-underline-position: under;
+    cursor: default;
+}
+
+
+header{
+    float: left;
+    box-sizing: border-box;
+	width: 60%;
+	height: 172px;
+	box-shadow: 0 0 0 1px  #000066 inset; 
+	clip-path: inset(1px  1px 0 1px);
+	padding: 26px;
+
+
+}
+
+.header-sec1{
+	float: left;
+	width: 38%;
+}
+
+header .header-sec1 img{
+    width: 186px;
+}
+
+/********** content **********/
+
+.content{
+    float: left;
+	width: calc(60% - 40px);
+	height: calc(100% - 225px);
+    padding: 38px 20px;
+
+    position: relative;
+    overflow: hidden;
+	margin: 0 auto;
+}
+
+.content-sec3{
+    width: 100%;
+    height: 100%;
+    float: left;
+
+}
+
+
+#slider-wrap-sec3 {
+
+    width: 100%; /************************/
+    height: 100%; /************************/
+    position: relative;
+    overflow: hidden;
+	margin: 0 auto;
+}
+
+/* 이게 있어야 사진이 넘어감*/
+#slider-wrap-sec3 ul#slider-sec3 {
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    transition-duration: 0.8s;
+
+}
+
+#slider-wrap-sec3 ul#slider-sec3 li {
+    float: left; /* 있어야지 사진이 정렬됨*/
+    position: relative; /* 있어야지 사진이 하나에 한개씩 넘어감*/
+    width: 100%;
+}
+
+
+
+#slider-wrap-sec3 ul#slider-sec3 .content-title{
+    font-size: 28px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 600;
+
+
+}
+
+#slider-wrap-sec3 ul#slider-sec3 .content-table{
+    width: 100%;
+    margin: 57px 0;
+
+    border-bottom: #000066 1px solid;
+
+}
+
+
+#slider-wrap-sec3 ul#slider-sec3 .content-table-img{
+    width: 30%; 
+    height: auto; 
+    margin-top:-70px;
+    position: absolute;
+}
+
+#slider-wrap-sec3 ul#slider-sec3 .content-table td{
+    border-top: #000066 1px solid;
+    padding: 9px;
+}
+
+
+
+#slider-wrap-sec3 ul#slider-sec3 .content-table-title{
+    float: left;
+    font-size: 17px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 600;
+    padding-bottom: 6px;
+
+}
+#slider-wrap-sec3 ul#slider-sec3 .content-table-icon{
+    float: right;
+}
+#slider-wrap-sec3 ul#slider-sec3 .content-table-icon img{
+	width: 18px;
+}
+
+#slider-wrap-sec3 ul#slider-sec3 .content-table-date{
+    clear: both;
+
+}
+
+
+
+
+
+
+
+
+
+#sub-content{
+	width: calc(40% -1px);
+	height: 100%;
+    /* box-shadow: 0 0 0 1px  #000066 inset; 
+	clip-path: inset(1px 1px 1px 0); */
+
+    border-left: solid 1px #000066;
+    
+    
+    /*영역 스크롤*/
+    
+
+    overflow: scroll;
+    -ms-overflow-style: none;
+    
+}
+
+#sub-content::-webkit-scrollbar{ 
+    display:none;
+
+}
+
+
+.calendar{
+    width: 100%;
+    height: 50%;
+    transition-duration: 0.8s;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    opacity: 0.3;
+
+}
+
+.calendar-edge{
+   width:100%; 
+   height: 25%;
+
+   display:flex;
+
+
+   justify-content:center;
+   align-items:center;
+}
+
+.calendar-edge img{
+    width: 92%;
+
+    margin: auto 0;
+
+
+    border: #000066 1px solid;
+ }
+
+.calendar img{
+    width: 92%;
+
+    margin: auto 0;
+
+    border: #000066 1px solid;
+
+}
+
+
+.calendar .top{
+    margin-top: 30%;
+}
+
+
+.calendar .bottom{
+    margin-top: 80%;
+
+}
+
+
+
+
+
+/*************** debugging**************
+
+
+
+.content{
+    background-color: orange;
+}
+
+
+#sub-content{
+
+    transition-duration: 0.8s;
+
+}
+
+
+.main{
+    background-color: olivedrab;
+}
+
+*/
+
+
+

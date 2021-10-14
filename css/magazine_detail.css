@@ -1,0 +1,286 @@
+/********** main **********/
+
+.main{
+    float: right;
+	width: calc(100% - 530px);
+    height: 100%;
+}
+
+/********** header **********/
+
+
+
+header{
+    float: left;
+    box-sizing: border-box;
+	width: 60%;
+	height: 172px;
+	box-shadow: 0 0 0 1px  #000066 inset; 
+	clip-path: inset(1px  1px 0 1px);
+	padding: 26px;
+
+
+}
+
+.header-sec1{
+	float: left;
+	width: 38%;
+}
+
+header .header-sec1 img{
+    width: 186px;
+}
+
+.header-sec2{
+    float: left;
+
+	width: 32%;
+}
+
+header .header-sec2 h6{
+    font-size: 13px;
+	font-family:'Roboto', sans-serif;
+	font-weight: 500;
+}
+
+.header-sec3{
+	float: left;
+	width: 25%;
+}
+
+/********** content **********/
+
+.content{
+    float: left;
+	width: calc(60% - 40px);
+	height: calc(100% - 225px);
+
+    padding: 36px 20px;
+}
+
+.content .content-title{
+	float: right;
+    font-family: 'Roboto', sans-serif;
+    text-align: right;
+
+    height: 10%;
+    font-weight: normal;
+
+
+}
+
+.content .content-title h3{
+	font-size: 26px;
+    padding-bottom: 10px;
+}
+
+.content .content-slide{
+    width: 100%;
+    position: relative;
+    margin: 18% 0;
+}
+
+.content .content-slide input[type=radio]{
+    display: none;
+}
+
+
+
+
+
+.content .content-slide input[type=radio]:nth-child(1):checked~.content-slide-bullets>label:nth-child(1){
+    background-color: #000066;
+}
+.content .content-slide input[type=radio]:nth-child(2):checked~.content-slide-bullets>label:nth-child(2){
+    background-color: #000066;
+}
+.content .content-slide input[type=radio]:nth-child(3):checked~.content-slide-bullets>label:nth-child(3){
+    background-color: #000066;
+}
+.content .content-slide input[type=radio]:nth-child(4):checked~.content-slide-bullets>label:nth-child(4){
+    background-color: #000066;
+}
+.content .content-slide input[type=radio]:nth-child(5):checked~.content-slide-bullets>label:nth-child(5){
+    background-color: #000066;
+}
+.content .content-slide input[type=radio]:nth-child(6):checked~.content-slide-bullets>label:nth-child(6){
+    background-color: #000066;
+}
+.content .content-slide input[type=radio]:nth-child(7):checked~.content-slide-bullets>label:nth-child(7){
+    background-color: #000066;
+}
+.content .content-slide input[type=radio]:nth-child(8):checked~.content-slide-bullets>label:nth-child(8){
+    background-color: #000066;
+}
+.content .content-slide input[type=radio]:nth-child(9):checked~.content-slide-bullets>label:nth-child(9){
+    background-color: #000066;
+}
+
+.content .content-slide input[type=radio]:nth-child(1):checked~ul.imgs>li:nth-child(1){
+    opacity: 1;
+    transition: 1s;
+    z-index: 1;
+}
+.content .content-slide input[type=radio]:nth-child(2):checked~ul.imgs>li:nth-child(2){
+    opacity: 1;
+    transition: 1s;
+    z-index: 1;
+}
+.content .content-slide input[type=radio]:nth-child(3):checked~ul.imgs>li:nth-child(3){
+    opacity: 1;
+    transition: 1s;
+    z-index: 1;
+}
+.content .content-slide input[type=radio]:nth-child(4):checked~ul.imgs>li:nth-child(4){
+    opacity: 1;
+    transition: 1s;
+    z-index: 1;
+}
+.content .content-slide input[type=radio]:nth-child(5):checked~ul.imgs>li:nth-child(5){
+    opacity: 1;
+    transition: 1s;
+    z-index: 1;
+}
+.content .content-slide input[type=radio]:nth-child(6):checked~ul.imgs>li:nth-child(6){
+    opacity: 1;
+    transition: 1s;
+    z-index: 1;
+}
+.content .content-slide input[type=radio]:nth-child(7):checked~ul.imgs>li:nth-child(7){
+    opacity: 1;
+    transition: 1s;
+    z-index: 1;
+}
+.content .content-slide input[type=radio]:nth-child(8):checked~ul.imgs>li:nth-child(8){
+    opacity: 1;
+    transition: 1s;
+    z-index: 1;
+}
+.content .content-slide input[type=radio]:nth-child(9):checked~ul.imgs>li:nth-child(9){
+    opacity: 1;
+    transition: 1s;
+    z-index: 1;
+}
+
+.content .content-slide img{
+    width: 99%;
+    padding: 0;
+    margin: 0;
+
+}
+
+.content .content-slide ul.imgs li{
+    position: absolute; /* 슬라이드가 겹쳐서 모여야 하므로 absolute 속성으로 배치 */
+    opacity: 0; /* 체크한 라디오박스 순서의 슬라이드만 표시되도록 기본 투명도 설정 */
+    list-style: none;
+    margin: 0;
+    text-align: right;
+}
+
+
+.content-slide-bullets{
+    position: absolute;
+    top:-35px;
+    right: -80px; /* 가로로 가운데 정렬 */
+    transform: translateX(-50%);
+    z-index: 2; /* 슬라이드 위에 보이도록 레이어 순위를 높임 */
+}
+.content-slide-bullets label{
+    display: inline-block; /* 한 줄로 불릿 나열*/
+    border: 1px solid #000066;
+    
+    width: 8px; /* 불릿 너비 */
+    height: 8px; /* 불릿 높이 */
+    margin: 0 2px;
+    cursor: pointer;
+}
+
+
+
+
+
+
+.sub-content{
+	width: calc(40% -1px);
+	height: calc(100% - 60px);
+    /* box-shadow: 0 0 0 1px  #000066 inset; 
+	clip-path: inset(1px 1px 1px 0); */
+
+    border-left: solid 1px #000066;
+    
+    padding: 30px;
+
+    overflow: hidden;
+
+    /*영역 스크롤*/
+
+}
+
+.sub-content .sub-content-icon{
+    height: 5%;
+}
+
+
+.sub-content .sub-content-icon img{
+
+    width: 25px;
+    float: right;
+}
+
+.sub-content img::after{
+    clear: both;
+}
+
+.sub-content .sub-content-text{
+    height: 85%;
+    margin: 55% 0;
+
+
+    overflow: scroll;
+    -ms-overflow-style: none;
+    
+}
+
+
+.sub-content .sub-content-text::-webkit-scrollbar{ 
+    display:none;
+}
+
+.sub-content .sub-content-text p{
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 30px;
+    
+}
+
+
+
+
+
+
+
+
+
+
+/*************** debugging**************
+
+
+.content{
+    background-color: orange;
+}
+
+
+.sub-content{
+    background-color: pink;
+
+    transition-duration: 0.8s;
+
+}
+
+
+.main{
+    background-color: olivedrab;
+}
+
+
+*/
